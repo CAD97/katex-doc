@@ -1,0 +1,13 @@
+[package]
+name = "katex-doc"
+version = "0.0.1"
+authors = ["Christopher Durham <cad97@cad97.com>"]
+include = ["src/lib.rs", "Cargo.toml", "katex.html"]
+license = "Unlicense OR MIT"
+description = "WIP: XaaS for KaTeX on docs.rs"
+
+[package.metadata.docs.rs]
+rustdoc-args = [
+    "--html-in-header",
+    ".cargo/registry/src/github.com-???/katex-doc-0.0.1/katex.html",
+]
