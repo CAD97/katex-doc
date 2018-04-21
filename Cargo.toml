@@ -1,13 +1,15 @@
 [package]
 name = "katex-doc"
-version = "0.0.2"
+version = "0.1.0"
 authors = ["Christopher Durham <cad97@cad97.com>"]
-include = ["src/lib.rs", "Cargo.toml", "katex.html"]
+include = ["src/lib.rs", "Cargo.toml", "katex.html", "README.md"]
 license = "Unlicense OR MIT"
-description = "WIP: XaaS for KaTeX on docs.rs"
+description = "See README"
+readme = "README.md"
+repository = "https://github.com/CAD97/katex-doc"
 
 [package.metadata.docs.rs]
 rustdoc-args = [
     "--html-in-header",
-    ".cargo/registry/src/github.com-1ecc6299db9ec823/katex-doc-0.0.2/katex.html",
+    ".cargo/registry/src/github.com-1ecc6299db9ec823/katex-doc-0.1.0/katex.html",
 ]

@@ -1,4 +1,3 @@
-//!
 //! Utilizing the html injection feature of rustdoc,
 //! we can enable the use of $`\KaTeX`$ in documentation!
 //!
@@ -22,12 +21,19 @@
 //!   \,d\xi
 //! ```
 //!
-//! To enable this on docs.rs, you need to add the following to your Cargo.toml:
+//! To enable this on docs.rs, you should be able to just add the following to your Cargo.toml:
 //!
 //! ```toml
 //! [package.metadata.docs.rs]
 //! rustdoc-args = [
 //!     "--html-in-header",
-//!     ".cargo/registry/src/github.com-???/katex-doc-0.0.0/katex.html",
+//!     ".cargo/registry/src/github.com-1ecc6299db9ec823/katex-doc-0.1.0/katex.html",
 //! ]
 //! ```
+//!
+//! If that doesn't work for other crates, download [katex.html] from this repository,
+//! then put it at the root of your repository, include it in your publish,
+//! then replace the reference to `katex-doc-ver.si.on` with your crate.
+//!
+//! [katex.html]: <https://github.com/CAD97/katex-doc/blob/master/katex.html>
+//!
